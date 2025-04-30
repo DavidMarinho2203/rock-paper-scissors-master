@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto Rock, Paper, Scissors game
 
-## Getting Started
+Este repositório contém uma projeto que foi inspirado em um dos exercícios do site [Frontend Mentor](https://www.frontendmentor.io/)
 
-First, run the development server:
+## Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Rock, Paper, Scissors game
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Rock, Paper, Scissors game](/public/assets/images/screenshot.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este desafio foi criado para eu melhorar os usos dos Componentes Reutilizaveis usando o [UI Shadcn](https://ui.shadcn.com/docs)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Armazenamento
 
-## Learn More
+Caso mude algum valor, os valores vão está armazenados no LocalStorage do seu navegador.
 
-To learn more about Next.js, take a look at the following resources:
+#### LINGUAGENS USADAS NESSE PROJETO.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- HTML
+- CSS
+- JavaScript
+- TypeScript
+- React
+- NextJS
+- Tailwindcss
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Como Usar
 
-## Deploy on Vercel
+1. Abra o prompt de comando e escolha pasta que você quer adicionar o arquivo:
+   `cd "caminho do local da pasta"`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Clone o repositório:
+   `git clone https://github.com/DavidMarinho2203/rock-paper-scissors-master`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Abra a pasta do repositório baixada em um prompt de comando e digite `npm run dev`
+
+## Contato
+
+Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
+
+- [LinkedIn](https://www.linkedin.com/in/david-beckham-278644227/)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/DavidMarinho2203)
+
+---
+
+Espero que você aproveite e que esse projeto seja útil para o você!
