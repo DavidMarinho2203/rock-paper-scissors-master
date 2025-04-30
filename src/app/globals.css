@@ -47,11 +47,11 @@
   --color-Header-text: hsl(217, 16%, 45%);
 
 
-  --color-Scissors-gradient: linear-gradient(180deg, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%);
-  --color-Paper-gradient: linear-gradient(180deg, hsl(230, 89%, 62%) 0%, hsl(230, 89%, 65%) 100%) ;
-  --color-Rock-gradient: linear-gradient(180deg, hsl(349, 71%, 52%) 0%, hsl(349, 70%, 56%) 100%);
-  --color-Lizard-gradient:linear-gradient(180deg, hsl(261, 73%, 60%) 0%, hsl(261, 72%, 63%) 100%);
-  --color-Spock-gradient:linear-gradient(180deg, hsl(189, 59%, 53%) 0%, hsl(189, 58%, 57%) 100%);
+  --color-scissors-border: hsl(39, 89%, 49%);
+  --color-paper-border: hsl(230, 89%, 62%);
+  --color-rock-border: hsl(349, 71%, 52%);
+  --color-lizard-border: hsl(261, 73%, 60%);
+  --color-spock-border: hsl(189, 59%, 53%);
 
   --font-barlow-Semi-Condensed: "Barlow Semi Condensed", sans-serif;
 
@@ -105,13 +105,11 @@
   --color-Header: var(--color-Header-text);
 
 
-  --color-ScissorsGradient: var(--color-Scissors-gradient);
-  --color-PaperGradient: var(--color-Paper-gradient);
-  --color-RockGradient: var(--color-Rock-gradient);
-  --color-LizardGradient: var(--color-Lizard-gradient);
-  --color-SpockGradient: var(--color-Spock-gradient);
-
-
+  --color-Scissors: var(--color-scissors-border);
+  --color-Paper: var(--color-paper-border);
+  --color-Rock: var(--color-rock-border);
+  --color-Lizard: var(--color-lizard-border);
+  --color-Spock: var(--color-spock-border);
 }
 
 @layer utilities {
@@ -119,24 +117,43 @@
     background-image: var(--color-bg-gradient);
   }
 
-  .bg-gradient-btt-Scissors {
-    background-image: var(--color-ScissorsGradient);
+  .btt-Scissor {
+    border-color: var(--color-Scissors);
   }
 
-  .bg-gradient-btt-PaperGradient {
-    background-image: var(--color-PaperGradient);
+  .btt-Paper {
+    border-color: var(--color-Paper);
   }
 
-  .bg-gradient-btt-RockGradient {
-    background-image: var(--color-RockGradient);
+  .btt-Rock {
+    border-color: var(--color-Rock);
   }
 
-  .bg-gradient-btt-LizardGradient {
-    background-image: var(--color-LizardGradient);
+  .btt-Lizard {
+    border-color: var(--color-LizardGradient);
   }
 
-  .bg-gradient-btt-SpockGradient {
-    background-image: var(--color-SpockGradient);
+  .btt-Spock {
+    border-color: var(--color-SpockGradient);
+  }
+
+  @keyframes pulseRing {
+    0% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+
+    100% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  .shadow-winner-ring {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.15),
+      0 0 0 60px rgba(255, 255, 255, 0.1),
+      0 0 0 90px rgba(255, 255, 255, 0.05);
+    z-index: 1;
   }
 
 }
@@ -179,10 +196,10 @@
 
 /* @layer base {
   * {
-   /* @apply border-border outline-ring/50;
+    /* @apply border-border outline-ring/50;
   }
+
   body {
-   /* @apply bg-background text-foreground;
+    /* @apply bg-background text-foreground;
   }
-}
- */
+} */
