@@ -11,11 +11,18 @@ export default function Home() {
   const [rules, setRules] = useState(false);
 
   useEffect(() => {
+
+
+    if (score > 0) {
+      localStorage.setItem("score", score.toString());
+    }
+    
     const storedScore = localStorage.getItem("score");
+
     if (storedScore) {
       setScore(parseInt(storedScore));
     }
-  }, [])
+  }, [score])
 
 
   return (
