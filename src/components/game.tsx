@@ -1,7 +1,5 @@
 "use client";
-import Image from 'next/image';
 import React, { useState } from 'react'
-import ButtonGame from './buttonGame';
 import ChooseButton from './game/ChooseButton';
 import ShowComputerOption from './game/ShowComputerOption';
 import ResultScreen from './game/ResultScreen';
