@@ -12,15 +12,12 @@ export default function Home() {
 
   useEffect(() => {
 
-
-    if (score > 0) {
-      localStorage.setItem("score", score.toString());
-    }
-    
     const storedScore = localStorage.getItem("score");
 
     if (storedScore) {
       setScore(parseInt(storedScore));
+    }else{
+      localStorage.setItem("score", score.toString());
     }
   }, [score])
 
