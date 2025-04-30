@@ -3,12 +3,19 @@ import Game from "@/components/game";
 import Header from "@/components/header";
 import Rules from "@/components/rules";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
 
   const [score, setScore] = useState(0);
   const [rules, setRules] = useState(false);
+
+  useEffect(() => {
+    const storedScore = localStorage.getItem("score");
+    if (storedScore) {
+      setScore(parseInt(storedScore));
+    }
+  }, [])
 
 
   return (
